@@ -12,3 +12,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+    instance-id: clientfeign111:8030   #${spring.application.name}:${server.port} #clientfeign:8030 #修改eureka的默认描述信息
+    
