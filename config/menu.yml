@@ -4,8 +4,9 @@ spring:
   application:
     name: menu
   datasource:
-    name: orderingsystem
-    url: jdbc:mysql://localhost:3307/orderingsystem?useUnicode=true&characterEncoding=UTF-8
+#     name: orderingsystem
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/orderingsystem?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: root
 eureka:
